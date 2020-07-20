@@ -1,0 +1,201 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May  9 09:59:52 2019
+# Process ID: 12352
+# Current directory: C:/Users/Antonio/Desktop/labo8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16216 C:\Users\Antonio\Desktop\labo8\labo8.xpr
+# Log file: C:/Users/Antonio/Desktop/labo8/vivado.log
+# Journal file: C:/Users/Antonio/Desktop/labo8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Antonio/Desktop/labo8/labo8.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUdecoderReg.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 664.879 ; gain = 80.707
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUdecodeReg.v
+export_ip_user_files -of_objects  [get_files C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUdecoderReg.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUdecoderReg.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v w ]
+add_files C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUwritebackReg.v w ]
+add_files C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUwritebackReg.v
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPwritebackReg.v w ]
+add_files C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPwritebackReg.v
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPdecodeReg.v w ]
+add_files C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPdecodeReg.v
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUmemoryReg.v w ]
+add_files C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUmemoryReg.v
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPmemoryReg.v w ]
+add_files C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPmemoryReg.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/alu.v w ]
+add_files C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/alu.v
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/signext.v w ]
+add_files C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/signext.v
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dreg.v w ]
+add_files C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dreg.v
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/regfile.v w ]
+add_files C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/regfile.v
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/multu.v w ]
+add_files C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/multu.v
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux2.v w ]
+add_files C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux2.v
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/shifter.v w ]
+add_files C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/shifter.v
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/adder.v w ]
+add_files C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/adder.v
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v w ]
+add_files -fileset sim_1 C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v
+update_compile_order -fileset sim_1
+add_files -norecurse C:/Users/Antonio/Desktop/labo8/memfile.dat.txt
+set_property top mips [current_fileset]
+set_property top tb_mips_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mips_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_mips_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mips_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mips_top_behav xil_defaultlib.tb_mips_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <mips_top> not found while processing module instance <DUT> [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v:14]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 736.477 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_runs synth_1 -jobs 4
+[Thu May  9 10:56:43 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Antonio/Desktop/labo8/labo8.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu May  9 11:03:57 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Antonio/Desktop/labo8/labo8.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu May  9 11:06:45 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Antonio/Desktop/labo8/labo8.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu May  9 11:08:39 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Antonio/Desktop/labo8/labo8.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu May  9 11:10:08 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Antonio/Desktop/labo8/labo8.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu May  9 11:11:43 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Antonio/Desktop/labo8/labo8.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu May  9 11:15:47 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Antonio/Desktop/labo8/labo8.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Thu May  9 11:19:12 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Antonio/Desktop/labo8/labo8.runs/synth_1/runme.log
+[Thu May  9 11:19:12 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Antonio/Desktop/labo8/labo8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu May  9 11:19:57 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Antonio/Desktop/labo8/labo8.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu May  9 11:20:26 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Antonio/Desktop/labo8/labo8.runs/synth_1/runme.log
+launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Common 17-344] 'open_run' was cancelled
+INFO: [Vivado 12-5357] 'setup' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mips_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_mips_top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mips_top_behav xil_defaultlib.tb_mips_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <mips_top> not found while processing module instance <DUT> [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v:14]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mips_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_mips_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mips_top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mips_top_behav xil_defaultlib.tb_mips_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <mips_top> not found while processing module instance <DUT> [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v:14]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 11:26:27 2019...

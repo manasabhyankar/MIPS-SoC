@@ -1,0 +1,517 @@
+
+*** Running vivado
+    with args -log mips.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mips.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source mips.tcl -notrace
+Command: synth_design -top mips -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9640 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 338.816 ; gain = 93.828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mips' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mips.v:3]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/datapath.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CUdecodeReg' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUdecodeReg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CUdecodeReg' (1#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUdecodeReg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DPdecodeReg' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPdecodeReg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DPdecodeReg' (2#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPdecodeReg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CUexecuteReg' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUexecuteReg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CUexecuteReg' (3#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUexecuteReg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DPexecuteReg' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DPexecuteReg' (4#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CUmemoryReg' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUmemoryReg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CUmemoryReg' (5#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUmemoryReg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DPmemoryReg' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPmemoryReg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DPmemoryReg' (6#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPmemoryReg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CUwritebackReg' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUwritebackReg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CUwritebackReg' (7#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUwritebackReg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DPwritebackReg' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPwritebackReg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DPwritebackReg' (8#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPwritebackReg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dreg' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dreg.v:3]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dreg' (9#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dreg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (10#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/adder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux2.v:3]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (11#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux2.v:3]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (11#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/regfile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (12#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/regfile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/shifter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (13#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/shifter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'multu' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/multu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'multu' (14#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/multu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'signext' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/signext.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (15#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/signext.v:3]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/alu.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/alu.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (16#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/alu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (17#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/datapath.v:3]
+INFO: [Synth 8-6157] synthesizing module 'controlunit' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/controlunit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/maindec.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (18#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/maindec.v:3]
+INFO: [Synth 8-6157] synthesizing module 'auxdec' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/auxdec.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'auxdec' (19#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/auxdec.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'controlunit' (20#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/controlunit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (21#1) [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mips.v:3]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 394.547 ; gain = 149.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 394.547 ; gain = 149.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 394.547 ; gain = 149.559
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/multu.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/alu.v:11]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 394.547 ; gain = 149.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 24    
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 49    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	   8 Input     11 Bit        Muxes := 1     
+	  14 Input      9 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CUdecodeReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
+Module DPdecodeReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module CUexecuteReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
+Module DPexecuteReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+Module CUmemoryReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 11    
+Module DPmemoryReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 7     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module CUwritebackReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 9     
+Module DPwritebackReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 7     
+	                5 Bit    Registers := 1     
+Module dreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module shifter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module multu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   6 Input      1 Bit        Muxes := 1     
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     11 Bit        Muxes := 1     
+Module auxdec 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      9 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP dp/mult/product, operation Mode is: A*B.
+DSP Report: operator dp/mult/product is absorbed into DSP dp/mult/product.
+DSP Report: operator dp/mult/product is absorbed into DSP dp/mult/product.
+DSP Report: Generating DSP dp/mult/product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator dp/mult/product is absorbed into DSP dp/mult/product.
+DSP Report: operator dp/mult/product is absorbed into DSP dp/mult/product.
+DSP Report: Generating DSP dp/mult/product, operation Mode is: A*B.
+DSP Report: operator dp/mult/product is absorbed into DSP dp/mult/product.
+DSP Report: operator dp/mult/product is absorbed into DSP dp/mult/product.
+DSP Report: Generating DSP dp/mult/product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator dp/mult/product is absorbed into DSP dp/mult/product.
+DSP Report: operator dp/mult/product is absorbed into DSP dp/mult/product.
+INFO: [Synth 8-3886] merging instance 'dp/cu_decReg/jal_addr_selQ_reg' (FDC) to 'dp/cu_decReg/jal_pc_selQ_reg'
+INFO: [Synth 8-3886] merging instance 'dp/dp_decReg/pc_plus4Q_reg[0]' (FDC) to 'dp/dp_memReg/btaQ_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[11]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[12]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[13]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[13]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[14]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[14]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[15]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dp/cu_exeReg/jal_addr_selQ_reg' (FDC) to 'dp/cu_exeReg/jal_pc_selQ_reg'
+INFO: [Synth 8-3886] merging instance 'dp/dp_decReg/instrQ_reg[28]' (FDC) to 'dp/cu_decReg/BRQ_reg'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[10]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[10]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[9]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[9]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[8]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[8]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[7]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[7]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[6]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[6]'
+INFO: [Synth 8-3886] merging instance 'dp/cu_memReg/jal_addr_selQ_reg' (FDC) to 'dp/cu_memReg/jal_pc_selQ_reg'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/sext_immQ_reg[30]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/sext_immQ_reg[31]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[0]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[1]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[2]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[3]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[4]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[4]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[5]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/sext_immQ_reg[15]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[16]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/sext_immQ_reg[16]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[17]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/sext_immQ_reg[17]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[18]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/sext_immQ_reg[18]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[19]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/sext_immQ_reg[19]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[20]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/sext_immQ_reg[20]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[21]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/sext_immQ_reg[21]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[22]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/sext_immQ_reg[22]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[23]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/sext_immQ_reg[23]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[24]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/sext_immQ_reg[24]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/sext_immQ_reg[25]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[26]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/sext_immQ_reg[26]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[27]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/sext_immQ_reg[27]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[28]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/sext_immQ_reg[28]' (FDC) to 'dp/dp_exeReg/sext_immQ_reg[29]'
+INFO: [Synth 8-3886] merging instance 'dp/dp_exeReg/instrQ_reg[28]' (FDC) to 'dp/cu_exeReg/BRQ_reg'
+INFO: [Synth 8-3886] merging instance 'dp/cu_wbReg/jal_addr_selQ_reg' (FDC) to 'dp/cu_wbReg/jal_pc_selQ_reg'
+INFO: [Synth 8-3886] merging instance 'dp/dp_memReg/instrQ_reg[28]' (FDC) to 'dp/cu_memReg/BRQ_reg'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 555.945 ; gain = 310.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------+-----------+----------------------+---------------+
+|Module Name | RTL Object   | Inference | Size (Depth x Width) | Primitives    | 
++------------+--------------+-----------+----------------------+---------------+
+|mips        | dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 18   | 
++------------+--------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|multu       | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multu       | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multu       | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multu       | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 555.945 ; gain = 310.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+--------------+-----------+----------------------+---------------+
+|Module Name | RTL Object   | Inference | Size (Depth x Width) | Primitives    | 
++------------+--------------+-----------+----------------------+---------------+
+|mips        | dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 18   | 
++------------+--------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v:21]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v:20]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v:20]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v:21]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v:20]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v:21]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v:20]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v:21]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 555.945 ; gain = 310.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 555.945 ; gain = 310.957
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 555.945 ; gain = 310.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 555.945 ; gain = 310.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 555.945 ; gain = 310.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 555.945 ; gain = 310.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 555.945 ; gain = 310.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                      | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|mips        | dp/cu_wbReg/shift_selQ_reg    | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|mips        | dp/cu_wbReg/dm2regQ_reg       | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|mips        | dp/cu_wbReg/mult_selQ_reg     | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|mips        | dp/cu_wbReg/lo_hi_selQ_reg    | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|mips        | dp/cu_wbReg/mult_enQ_reg      | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|mips        | dp/cu_wbReg/l_or_r_shiftQ_reg | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|mips        | dp/cu_wbReg/jal_pc_selQ_reg   | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|mips        | dp/dp_wbReg/pc_plus4Q_reg[31] | 4      | 31    | YES          | NO                 | YES               | 31     | 0       | 
+|mips        | dp/cu_wbReg/writeE_regQ_reg   | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |    48|
+|3     |DSP48E1 |     4|
+|4     |LUT1    |     2|
+|5     |LUT2    |   125|
+|6     |LUT3    |    85|
+|7     |LUT4    |   144|
+|8     |LUT5    |   136|
+|9     |LUT6    |   277|
+|10    |RAM32M  |    18|
+|11    |SRL16E  |    39|
+|12    |FDCE    |   611|
+|13    |FDRE    |    39|
+|14    |LD      |    32|
+|15    |IBUF    |    70|
+|16    |OBUF    |   418|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------------+---------------+------+
+|      |Instance       |Module         |Cells |
++------+---------------+---------------+------+
+|1     |top            |               |  2050|
+|2     |  dp           |datapath       |  1559|
+|3     |    alu        |alu            |    59|
+|4     |    cu_decReg  |CUdecodeReg    |    17|
+|5     |    cu_exeReg  |CUexecuteReg   |    61|
+|6     |    cu_memReg  |CUmemoryReg    |    19|
+|7     |    cu_wbReg   |CUwritebackReg |    77|
+|8     |    dp_decReg  |DPdecodeReg    |   121|
+|9     |    dp_exeReg  |DPexecuteReg   |   288|
+|10    |    dp_memReg  |DPmemoryReg    |   266|
+|11    |    dp_wbReg   |DPwritebackReg |   362|
+|12    |    mfhi       |dreg           |    64|
+|13    |    mflo       |dreg_0         |    32|
+|14    |    mult       |multu          |    63|
+|15    |    pc_plus_4  |adder          |    37|
+|16    |    pc_plus_br |adder_1        |     8|
+|17    |    pc_reg     |dreg_2         |    33|
+|18    |    rf         |regfile        |    52|
++------+---------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 555.945 ; gain = 310.957
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 555.945 ; gain = 310.957
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 555.945 ; gain = 310.957
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 102 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 18 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 642.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 50 instances were transformed.
+  LD => LDCE: 32 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 18 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+103 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 642.777 ; gain = 397.789
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 642.777 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Antonio/Desktop/labo8/labo8.runs/synth_1/mips.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mips_utilization_synth.rpt -pb mips_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 11:20:55 2019...

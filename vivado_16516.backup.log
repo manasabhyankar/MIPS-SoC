@@ -1,0 +1,1709 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May  9 11:32:31 2019
+# Process ID: 16516
+# Current directory: C:/Users/Antonio/Desktop/labo8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17400 C:\Users\Antonio\Desktop\labo8\labo8.xpr
+# Log file: C:/Users/Antonio/Desktop/labo8/vivado.log
+# Journal file: C:/Users/Antonio/Desktop/labo8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Antonio/Desktop/labo8/labo8.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 687.816 ; gain = 109.973
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/Antonio/Desktop/labo8/memfile.dat
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mips_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_mips_top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mips_top_behav xil_defaultlib.tb_mips_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <mips_top> not found while processing module instance <DUT> [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v:14]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mips_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_mips_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/multu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mips_top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mips_top_behav xil_defaultlib.tb_mips_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'clk' on this module [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v:15]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 734.152 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mips_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_mips_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/multu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mips_top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mips_top_behav xil_defaultlib.tb_mips_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CUdecodeReg
+Compiling module xil_defaultlib.DPdecodeReg
+Compiling module xil_defaultlib.CUexecuteReg
+Compiling module xil_defaultlib.DPexecuteReg
+Compiling module xil_defaultlib.CUmemoryReg
+Compiling module xil_defaultlib.DPmemoryReg
+Compiling module xil_defaultlib.CUwritebackReg
+Compiling module xil_defaultlib.DPwritebackReg
+Compiling module xil_defaultlib.dreg
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.multu
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.auxdec
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.tb_mips_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_mips_top_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/xsim.dir/tb_mips_top_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 83.199 ; gain = 1.273
+INFO: [Common 17-206] Exiting Webtalk at Thu May  9 11:38:44 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 734.152 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_mips_top_behav -key {Behavioral:sim_1:Functional:tb_mips_top} -tclbatch {tb_mips_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_mips_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 20 ns : File "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v" Line 58
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mips_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 757.250 ; gain = 23.098
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 757.734 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mips_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_mips_top_vlog.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 757.734 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mips_top_behav xil_defaultlib.tb_mips_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 757.734 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_mips_top_behav -key {Behavioral:sim_1:Functional:tb_mips_top} -tclbatch {tb_mips_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_mips_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 20 ns : File "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v" Line 58
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 757.734 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mips_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 757.734 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mips_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_mips_top_vlog.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 757.734 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mips_top_behav xil_defaultlib.tb_mips_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 757.734 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_mips_top_behav -key {Behavioral:sim_1:Functional:tb_mips_top} -tclbatch {tb_mips_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_mips_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 20 ns : File "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v" Line 58
+xsim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 757.734 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mips_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 757.734 ; gain = 0.000
+set_property top SoC [current_fileset]
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_SoC.v w ]
+add_files -fileset sim_1 C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_SoC.v
+update_compile_order -fileset sim_1
+set_property top tb_SoC [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SoC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SoC_vlog.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/BUFFER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BUFFER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CNT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/FMUX2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FMUX2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SR_FF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SR_FF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/fact_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/fact_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial_cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_dp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial_dp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/gpio_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SoC
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SoC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SoC_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SoC_behav xil_defaultlib.tb_SoC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'writeE_dm' on this module [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v:30]
+ERROR: [VRFC 10-3180] cannot find port 'writeE' on this module [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v:44]
+ERROR: [VRFC 10-3180] cannot find port 'writeEM' on this module [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v:55]
+ERROR: [VRFC 10-3180] cannot find port 'writeE' on this module [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v:52]
+ERROR: [VRFC 10-3180] cannot find port 'writeE' on this module [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v:61]
+WARNING: [VRFC 10-3755] too many parameters for module instance 'U6' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_dp.v:26]
+ERROR: [VRFC 10-3180] cannot find port 'writeE' on this module [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v:70]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SoC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SoC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/BUFFER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BUFFER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CNT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/FMUX2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FMUX2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SR_FF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SR_FF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/fact_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/fact_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial_cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_dp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial_dp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/gpio_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/multu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SoC
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SoC_behav xil_defaultlib.tb_SoC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'writeE' on this module [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v:44]
+ERROR: [VRFC 10-3180] cannot find port 'writeEM' on this module [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v:55]
+ERROR: [VRFC 10-3180] cannot find port 'writeE' on this module [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v:52]
+ERROR: [VRFC 10-3180] cannot find port 'writeE' on this module [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v:61]
+WARNING: [VRFC 10-3755] too many parameters for module instance 'U6' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_dp.v:26]
+ERROR: [VRFC 10-3180] cannot find port 'writeE' on this module [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v:70]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 757.734 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SoC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SoC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/BUFFER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BUFFER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CNT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/FMUX2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FMUX2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SR_FF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SR_FF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/fact_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/fact_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial_cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_dp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial_dp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/gpio_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/multu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SoC
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SoC_behav xil_defaultlib.tb_SoC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'writeEM' on this module [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v:55]
+ERROR: [VRFC 10-3180] cannot find port 'writeE' on this module [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v:52]
+ERROR: [VRFC 10-3180] cannot find port 'writeE' on this module [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v:61]
+WARNING: [VRFC 10-3755] too many parameters for module instance 'U6' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_dp.v:26]
+ERROR: [VRFC 10-3180] cannot find port 'writeE' on this module [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v:70]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 757.734 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SoC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SoC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/BUFFER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BUFFER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CNT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/FMUX2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FMUX2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SR_FF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SR_FF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/fact_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/fact_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial_cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_dp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial_dp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/gpio_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/multu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SoC
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SoC_behav xil_defaultlib.tb_SoC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3755] too many parameters for module instance 'U6' [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_dp.v:26]
+ERROR: [VRFC 10-2922] 'BUFFER' expects 0 arguments [C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_dp.v:26]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 757.734 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SoC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SoC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/BUFFER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BUFFER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CNT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/FMUX2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FMUX2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SR_FF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SR_FF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/fact_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/fact_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial_cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_dp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial_dp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/gpio_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/multu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SoC
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SoC_behav xil_defaultlib.tb_SoC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CUdecodeReg
+Compiling module xil_defaultlib.DPdecodeReg
+Compiling module xil_defaultlib.CUexecuteReg
+Compiling module xil_defaultlib.DPexecuteReg
+Compiling module xil_defaultlib.CUmemoryReg
+Compiling module xil_defaultlib.DPmemoryReg
+Compiling module xil_defaultlib.CUwritebackReg
+Compiling module xil_defaultlib.DPwritebackReg
+Compiling module xil_defaultlib.dreg
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.multu
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.auxdec
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.SoC_ad
+Compiling module xil_defaultlib.fact_ad
+Compiling module xil_defaultlib.REG(WIDTH=4)
+Compiling module xil_defaultlib.REG(WIDTH=1)
+Compiling module xil_defaultlib.REG(WIDTH=32)
+Compiling module xil_defaultlib.FMUX2(WIDTH=32)
+Compiling module xil_defaultlib.CNT(WIDTH=32)
+Compiling module xil_defaultlib.CMP(WIDTH=32)
+Compiling module xil_defaultlib.MUL
+Compiling module xil_defaultlib.BUFFER(WIDTH=32)
+Compiling module xil_defaultlib.factorial_dp
+Compiling module xil_defaultlib.factorial_cu
+Compiling module xil_defaultlib.factorial
+Compiling module xil_defaultlib.SR_FF(WIDTH=1)
+Compiling module xil_defaultlib.mux4(WIDTH=32)
+Compiling module xil_defaultlib.fact_top
+Compiling module xil_defaultlib.gpio_ad
+Compiling module xil_defaultlib.gpio_top
+Compiling module xil_defaultlib.SoC
+Compiling module xil_defaultlib.tb_SoC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SoC_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/xsim.dir/tb_SoC_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 83.129 ; gain = 0.723
+INFO: [Common 17-206] Exiting Webtalk at Thu May  9 16:41:17 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 789.664 ; gain = 2.043
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SoC_behav -key {Behavioral:sim_1:Functional:tb_SoC} -tclbatch {tb_SoC.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SoC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SoC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 796.527 ; gain = 8.906
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 801.211 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SoC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SoC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/BUFFER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BUFFER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CNT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/FMUX2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FMUX2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SR_FF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SR_FF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/fact_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/fact_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial_cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_dp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial_dp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/gpio_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/multu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SoC
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SoC_behav xil_defaultlib.tb_SoC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CUdecodeReg
+Compiling module xil_defaultlib.DPdecodeReg
+Compiling module xil_defaultlib.CUexecuteReg
+Compiling module xil_defaultlib.DPexecuteReg
+Compiling module xil_defaultlib.CUmemoryReg
+Compiling module xil_defaultlib.DPmemoryReg
+Compiling module xil_defaultlib.CUwritebackReg
+Compiling module xil_defaultlib.DPwritebackReg
+Compiling module xil_defaultlib.dreg
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.multu
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.auxdec
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.SoC_ad
+Compiling module xil_defaultlib.fact_ad
+Compiling module xil_defaultlib.REG(WIDTH=4)
+Compiling module xil_defaultlib.REG(WIDTH=1)
+Compiling module xil_defaultlib.REG(WIDTH=32)
+Compiling module xil_defaultlib.FMUX2(WIDTH=32)
+Compiling module xil_defaultlib.CNT(WIDTH=32)
+Compiling module xil_defaultlib.CMP(WIDTH=32)
+Compiling module xil_defaultlib.MUL
+Compiling module xil_defaultlib.BUFFER(WIDTH=32)
+Compiling module xil_defaultlib.factorial_dp
+Compiling module xil_defaultlib.factorial_cu
+Compiling module xil_defaultlib.factorial
+Compiling module xil_defaultlib.SR_FF(WIDTH=1)
+Compiling module xil_defaultlib.mux4(WIDTH=32)
+Compiling module xil_defaultlib.fact_top
+Compiling module xil_defaultlib.gpio_ad
+Compiling module xil_defaultlib.gpio_top
+Compiling module xil_defaultlib.SoC
+Compiling module xil_defaultlib.tb_SoC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SoC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SoC_behav -key {Behavioral:sim_1:Functional:tb_SoC} -tclbatch {tb_SoC.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SoC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ARE WE DONE!?
+$finish called at time : 20 ns : File "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_SoC.v" Line 44
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SoC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 801.211 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SoC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SoC_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SoC_behav xil_defaultlib.tb_SoC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SoC_behav -key {Behavioral:sim_1:Functional:tb_SoC} -tclbatch {tb_SoC.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SoC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ARE WE DONE!?
+$finish called at time : 20 ns : File "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_SoC.v" Line 44
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SoC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 803.863 ; gain = 2.039
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SoC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SoC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/BUFFER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BUFFER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CNT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/FMUX2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FMUX2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SR_FF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SR_FF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/SoC_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SoC_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/fact_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/fact_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fact_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial_cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/factorial_dp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factorial_dp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/gpio_ad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_ad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/multu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_SoC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SoC
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SoC_behav xil_defaultlib.tb_SoC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CUdecodeReg
+Compiling module xil_defaultlib.DPdecodeReg
+Compiling module xil_defaultlib.CUexecuteReg
+Compiling module xil_defaultlib.DPexecuteReg
+Compiling module xil_defaultlib.CUmemoryReg
+Compiling module xil_defaultlib.DPmemoryReg
+Compiling module xil_defaultlib.CUwritebackReg
+Compiling module xil_defaultlib.DPwritebackReg
+Compiling module xil_defaultlib.dreg
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.multu
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.auxdec
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.SoC_ad
+Compiling module xil_defaultlib.fact_ad
+Compiling module xil_defaultlib.REG(WIDTH=4)
+Compiling module xil_defaultlib.REG(WIDTH=1)
+Compiling module xil_defaultlib.REG(WIDTH=32)
+Compiling module xil_defaultlib.FMUX2(WIDTH=32)
+Compiling module xil_defaultlib.CNT(WIDTH=32)
+Compiling module xil_defaultlib.CMP(WIDTH=32)
+Compiling module xil_defaultlib.MUL
+Compiling module xil_defaultlib.BUFFER(WIDTH=32)
+Compiling module xil_defaultlib.factorial_dp
+Compiling module xil_defaultlib.factorial_cu
+Compiling module xil_defaultlib.factorial
+Compiling module xil_defaultlib.SR_FF(WIDTH=1)
+Compiling module xil_defaultlib.mux4(WIDTH=32)
+Compiling module xil_defaultlib.fact_top
+Compiling module xil_defaultlib.gpio_ad
+Compiling module xil_defaultlib.gpio_top
+Compiling module xil_defaultlib.SoC
+Compiling module xil_defaultlib.tb_SoC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_SoC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SoC_behav -key {Behavioral:sim_1:Functional:tb_SoC} -tclbatch {tb_SoC.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_SoC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ARE WE DONE!?
+$finish called at time : 40 ns : File "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_SoC.v" Line 45
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SoC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 898.258 ; gain = 0.000
+current_sim simulation_3
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top tb_mips_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property top mips [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mips_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_mips_top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mips_top_behav xil_defaultlib.tb_mips_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CUdecodeReg
+Compiling module xil_defaultlib.DPdecodeReg
+Compiling module xil_defaultlib.CUexecuteReg
+Compiling module xil_defaultlib.DPexecuteReg
+Compiling module xil_defaultlib.CUmemoryReg
+Compiling module xil_defaultlib.DPmemoryReg
+Compiling module xil_defaultlib.CUwritebackReg
+Compiling module xil_defaultlib.DPwritebackReg
+Compiling module xil_defaultlib.dreg
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.multu
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.auxdec
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.tb_mips_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_mips_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_mips_top_behav -key {Behavioral:sim_1:Functional:tb_mips_top} -tclbatch {tb_mips_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_mips_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 20 ns : File "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v" Line 58
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mips_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 898.258 ; gain = 0.000
+current_sim simulation_7
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mips_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_mips_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/multu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mips_top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mips_top_behav xil_defaultlib.tb_mips_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CUdecodeReg
+Compiling module xil_defaultlib.DPdecodeReg
+Compiling module xil_defaultlib.CUexecuteReg
+Compiling module xil_defaultlib.DPexecuteReg
+Compiling module xil_defaultlib.CUmemoryReg
+Compiling module xil_defaultlib.DPmemoryReg
+Compiling module xil_defaultlib.CUwritebackReg
+Compiling module xil_defaultlib.DPwritebackReg
+Compiling module xil_defaultlib.dreg
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.multu
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.auxdec
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.tb_mips_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_mips_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_mips_top_behav -key {Behavioral:sim_1:Functional:tb_mips_top} -tclbatch {tb_mips_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_mips_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 20 ns : File "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v" Line 67
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mips_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 905.086 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mips_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_mips_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/CUwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CUwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPdecodeReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPdecodeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPexecuteReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPexecuteReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPmemoryReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPmemoryReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/DPwritebackReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DPwritebackReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/auxdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auxdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/controlunit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlunit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/dreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/multu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mips_top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mips_top_behav xil_defaultlib.tb_mips_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CUdecodeReg
+Compiling module xil_defaultlib.DPdecodeReg
+Compiling module xil_defaultlib.CUexecuteReg
+Compiling module xil_defaultlib.DPexecuteReg
+Compiling module xil_defaultlib.CUmemoryReg
+Compiling module xil_defaultlib.DPmemoryReg
+Compiling module xil_defaultlib.CUwritebackReg
+Compiling module xil_defaultlib.DPwritebackReg
+Compiling module xil_defaultlib.dreg
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.multu
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.auxdec
+Compiling module xil_defaultlib.controlunit
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.tb_mips_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_mips_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_mips_top_behav -key {Behavioral:sim_1:Functional:tb_mips_top} -tclbatch {tb_mips_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_mips_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 20 ns : File "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v" Line 67
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mips_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 905.086 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mips_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_mips_top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5fce85975394924bac9b96149e94d8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mips_top_behav xil_defaultlib.tb_mips_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Antonio/Desktop/labo8/labo8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_mips_top_behav -key {Behavioral:sim_1:Functional:tb_mips_top} -tclbatch {tb_mips_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_mips_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 20 ns : File "C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_mips_top.v" Line 67
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mips_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 905.086 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 17:32:17 2019...

@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May  9 11:32:31 2019
+# Process ID: 16516
+# Current directory: C:/Users/Antonio/Desktop/labo8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17400 C:\Users\Antonio\Desktop\labo8\labo8.xpr
+# Log file: C:/Users/Antonio/Desktop/labo8/vivado.log
+# Journal file: C:/Users/Antonio/Desktop/labo8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Antonio/Desktop/labo8/labo8.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/Antonio/Desktop/labo8/memfile.dat
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_mips_top.tcl
+run all
+close_sim
+launch_simulation
+source tb_mips_top.tcl
+close_sim
+launch_simulation
+source tb_mips_top.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top SoC [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_SoC.v w ]
+add_files -fileset sim_1 C:/Users/Antonio/Desktop/labo8/labo8.srcs/sim_1/new/tb_SoC.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_SoC [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_SoC.tcl
+close_sim
+launch_simulation
+source tb_SoC.tcl
+close_sim
+launch_simulation
+source tb_SoC.tcl
+close_sim
+launch_simulation
+source tb_SoC.tcl
+current_sim simulation_3
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_mips_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top mips [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_mips_top.tcl
+current_sim simulation_7
+close_sim
+close_sim
+launch_simulation
+source tb_mips_top.tcl
+close_sim
+launch_simulation
+source tb_mips_top.tcl
+close_sim
+launch_simulation
+source tb_mips_top.tcl
+close_sim

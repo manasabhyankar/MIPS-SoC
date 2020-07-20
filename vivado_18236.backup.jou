@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May  9 11:29:40 2019
+# Process ID: 18236
+# Current directory: C:/Users/Antonio/Desktop/labo8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14688 C:\Users\Antonio\Desktop\labo8\labo8.xpr
+# Log file: C:/Users/Antonio/Desktop/labo8/vivado.log
+# Journal file: C:/Users/Antonio/Desktop/labo8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Antonio/Desktop/labo8/labo8.xpr
+update_compile_order -fileset sources_1
+launch_simulation -mode post-synthesis -type functional
+launch_simulation
+export_ip_user_files -of_objects  [get_files C:/Users/Antonio/Desktop/labo8/memfile.dat.txt] -no_script -reset -force -quiet
+remove_files  C:/Users/Antonio/Desktop/labo8/memfile.dat.txt
